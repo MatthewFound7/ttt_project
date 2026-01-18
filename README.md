@@ -13,6 +13,9 @@ A modern implementation of the classic Tic-Tac-Toe game using a Q-learning train
 
 Ideas to add: Key Features, Demo/screenshots, project structure, how the RL works, installation, how to run, configuration, testing, future improvements, skills showcased, tech used
 
+Tasks
+- PR process github
+
 ## 1. Introduction
 
 Tic-Tac-Toe v3 is the current up-to-date version of one of my portfolio projects designed to demonstrate proficiency in building interactive applications with python. The project features a user-friendly UI, and showcases a variety of programming and design skills. This version includes a second page for potential statistics expansion.
