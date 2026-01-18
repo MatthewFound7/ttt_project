@@ -10,7 +10,7 @@ BoardCoord = Tuple[float, float]
 
 class BoardView(CTkFrame):
     def __init__(self, master, on_cell_click: Callable[[float, float, CTkButton], None]) -> None:
-        super().__init__(master, fg_color="white", height=600, width=600, corner_radius=0)
+        super().__init__(master, fg_color="white", height=450, width=450, corner_radius=0)
         self._on_cell_click = on_cell_click
 
         self._board_buttons: List[CTkButton] = []
@@ -20,7 +20,7 @@ class BoardView(CTkFrame):
         self._placed_positions: List[Tuple[CTkLabel, float, float]] = []
         self._highlight_board_buttons: List[CTkButton] = []
 
-        self._canvas = CTkCanvas(self, width=530, height=530, bg="white", highlightthickness=0)
+        self._canvas = CTkCanvas(self, width=420, height=420, bg="white", highlightthickness=0)
         self._canvas.grid(column=0, row=1, padx=15, pady=15)
 
         self._draw_game_grid()
@@ -38,10 +38,10 @@ class BoardView(CTkFrame):
         return self._coord_button_map
 
     def _draw_game_grid(self) -> None:
-        self._canvas.create_line(0, 180, 600, 180, width=8, capstyle="round", fill=DEEP_RED)
-        self._canvas.create_line(0, 360, 600, 360, width=8, capstyle="round", fill=DEEP_RED)
-        self._canvas.create_line(180, 0, 180, 600, width=8, capstyle="round", fill=DEEP_RED)
-        self._canvas.create_line(360, 0, 360, 600, width=8, capstyle="round", fill=DEEP_RED)
+        self._canvas.create_line(0, 140, 420, 140, width=8, capstyle="round", fill=DEEP_RED)
+        self._canvas.create_line(0, 280, 420, 280, width=8, capstyle="round", fill=DEEP_RED)
+        self._canvas.create_line(140, 0, 140, 420, width=8, capstyle="round", fill=DEEP_RED)
+        self._canvas.create_line(280, 0, 280, 420, width=8, capstyle="round", fill=DEEP_RED)
 
     def create_click_grid(self) -> None:
         self._board_buttons.clear()
