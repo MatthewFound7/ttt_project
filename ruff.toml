@@ -1,0 +1,20 @@
+line-length = 100
+
+[lint]
+# https://docs.astral.sh/ruff/rules/
+select = [
+    "F",    # pyflakes
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "I",    # isort
+]
+ignore = [
+    "E203"  # not PEP8 compliant
+]
+
+[lint.isort]
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+known-local-folder = ["Tic-Tac-Toe"]
+
+[lint.per-file-ignores]
+"__init__.py" = ["F401", "I001"]
