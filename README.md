@@ -3,14 +3,14 @@
 A modern implementation of the classic Tic-Tac-Toe game using a Q-learning trained AI player.
 
 ## Contents
-1. About
-2. Overview
-3. Reinforcement Learning (Q-learning) Integration
-4. Q-Agent Configuration
-5. Installation
-6. Development 
-7. Future & On-going Work
-8. Notes on Structure
+- [About](#about)
+- [Overview](#overview)
+- [Reinforcement Learning (Q-learning) Integration](#reinforcement-learning-q-learning-integration)
+- [Q-Agent Configuration](#q-agent-configuration)
+- [Installation](#installation)
+- [Development](#development)
+- [Future & On-going Work](#future--on-going-work)
+- [Notes on Structure](#notes-on-structure)
 
 ## 1. About
 
