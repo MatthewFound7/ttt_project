@@ -7,11 +7,8 @@ x_vals, y_vals = [], []
 
 
 def play_one_training_episode(
-    environment: TicTacToeEnvironment,
-    agent: QAgent,
-    opponent: str = "random",
-    max_plies: int = 9
-    ) -> float:
+    environment: TicTacToeEnvironment, agent: QAgent, opponent: str = "random", max_plies: int = 9
+) -> float:
     """
     One full game where X (agent) and O (opponent) alternate moves.
     Returns total reward for X in the episode.
@@ -42,7 +39,7 @@ def play_one_training_episode(
             if opponent_done:
                 agent.update_q_values(
                     state, action, intermediate_reward, intermediate_state, [], True
-                    )
+                )
                 total_reward += intermediate_reward
                 break
             else:

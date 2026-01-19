@@ -5,8 +5,8 @@ from environment import TicTacToeEnvironment
 
 
 def play_greedy_episode(
-        environment: TicTacToeEnvironment, agent: QAgent, verbose: bool = False
-        ) -> float:
+    environment: TicTacToeEnvironment, agent: QAgent, verbose: bool = False
+) -> float:
     state = environment.reset()
     is_done = False
     step_count = 0

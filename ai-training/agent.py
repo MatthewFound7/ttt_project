@@ -43,9 +43,9 @@ class QAgent:
         action: int,
         reward: float,
         next_state: str,
-        legal_next_actions:
-        list[int], terminal: bool
-        ) -> None:
+        legal_next_actions: list[int],
+        terminal: bool,
+    ) -> None:
         if terminal or not legal_next_actions:
             target_value = reward
         else:
