@@ -16,7 +16,7 @@ A modern implementation of the classic Tic-Tac-Toe game using a Q-learning train
 
 This game represents my first attempt at building a solid python full-stack project. I decided to keep things simple with a basic game (Tic-Tac-Toe) which has given me the opportunity to integrate something that is far more complex and which I am deeply passionate about: AI-trained models. Q-learning allows reinforcement training in python without the need of complex dependencies, which has really helped build my core python skills in OOP and separation of concerns. In this page, I cover some of my learnings, showcase the project and provide information on how to install/develop/contribute.
 
-Skills Developed: Python (OOP, Data Structures, modular design), AI (RL, Model Evaluation), UI Development (CustomTkinter, View Control)
+Skills Developed: Python (OOP, Data Structures, modular design), AI (RL, Model Evaluation), UI Development (CustomTkinter, View Control).
 
 ## 2. Overview
 
