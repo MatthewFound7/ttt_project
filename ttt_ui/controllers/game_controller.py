@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from typing import Optional, Tuple
 
 from ttt_core.ai.agents import QAgent, RandomAgent
-from ttt_core.engine.engine_facade import EngineFacade
+from ttt_core.engine.engine import Engine
 from ttt_core.engine.stats import Stats
 from ttt_ui.services.layout import CELLS
 
@@ -30,7 +30,7 @@ class GameController:
 
     def __init__(self) -> None:
         self._stats = Stats()
-        self._engine = EngineFacade(stats=self._stats)
+        self._engine = Engine(stats=self._stats)
         self._agent: Optional[object] = RandomAgent()
 
     def set_mode_multi(self) -> None:
@@ -56,7 +56,7 @@ class GameController:
         return self._produce_move_result(raw_move_status)
 
     def register_ai_click_and_move(self) -> MoveResult:
-        index = self._agent.choose(self._engine.expose_board)
+        index = self._agent.choose_move(self._engine.expose_board)
 
         raw_move_status = self._engine.index_move_and_update_status(index)
 

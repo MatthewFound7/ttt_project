@@ -107,11 +107,16 @@ Download Dependencies:
 ```
 pip install -r dev-requirements.txt
 ```
+Tests:
+```
+pytest tests
+pytest --cov=ttt_core
+pytest --cov=ttt_ui
+```
+- I try to maintain 90%+ test coverage across both `ttt_core` (backend) and `ttt_ui` (frontend) for code reliability.
 
 ## 7. Future & On-going Work
-- Need to add a PR process
-- Need to add tests
-- API integration
+- API integration?
 
 ## 8. Notes on Structure
 - Separation of concerns by creating uni-directional code flow: Training -> Backend -> Frontend

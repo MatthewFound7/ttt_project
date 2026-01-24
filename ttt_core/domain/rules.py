@@ -1,4 +1,4 @@
-from typing import Sequence
+from typing import Optional, Sequence
 
 WIN_LINES: Sequence[tuple[int, int, int]] = (
     (0, 1, 2),
@@ -12,7 +12,7 @@ WIN_LINES: Sequence[tuple[int, int, int]] = (
 )
 
 
-def has_winner(cells: Sequence[str]) -> tuple[bool, str | None]:
+def has_winner(cells: Sequence[str]) -> tuple[bool, Optional[str], Optional[tuple[int, int, int]]]:
     for a, b, c in WIN_LINES:
         if cells[a] and cells[a] == cells[b] == cells[c]:
             return True, cells[a], (a, b, c)

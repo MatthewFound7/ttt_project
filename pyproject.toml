@@ -1,0 +1,5 @@
+[tool.coverage.run]
+omit = [
+    "*/ttt_ui/app.py",
+    "*/customtkinter/*"
+]
