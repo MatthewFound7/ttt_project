@@ -6,7 +6,7 @@ from ttt_core.engine.game import Game
 from ttt_core.engine.stats import Stats
 
 
-class EngineFacade:
+class Engine:
     def __init__(self, stats: Stats) -> None:
         self.stats = stats
         self._game = Game(board=Board(), stats=stats)

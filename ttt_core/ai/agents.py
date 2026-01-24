@@ -20,7 +20,7 @@ class QAgent:
 
         self.q_values_load = defaultdict(float, loaded)
 
-    def choose(self, board: Board) -> int:
+    def choose_best_move(self, board: Board) -> int:
         """Return best legal move using greedy Q-values."""
 
         state = self._board_state(board)
@@ -41,7 +41,7 @@ class QAgent:
 
 @dataclass(frozen=True)
 class RandomAgent:
-    def choose(self, board: Board) -> int:
+    def choose_random_move(self, board: Board) -> int:
         """Chooses a random legal move index."""
         legal = board.legal_moves()
 
